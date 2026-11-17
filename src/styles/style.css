@@ -1,5 +1,6 @@
 @import url("./global.css");
 
+
 header{
     display: flex;
     justify-content: space-around;
@@ -9,17 +10,20 @@ header{
     border-bottom: 2px solid var(--color-primary);
 }
 
+
 ul{
     display: flex;
-    list-style: none;
     gap: 20px;
+    list-style: none;
 }
+
 
 li a{
     color: var(--color-light);
-    text-decoration: none;
-    font-family: var(--font-body);
+    text-decoration: none;   
+    font-family: var(--font-body); 
 }
+
 
 .btn-primary{
     background-color: var(--color-primary);
@@ -27,34 +31,36 @@ li a{
     border-radius: 10px;
     color: var(--color-light);
     text-decoration: none;
-    font-family: var(--font-body);
-    
+    font-family: var(--font-body); 
 }
+
 
 .btn-outline{
     border: 1px solid var(--color-light);
     padding: 10px 20px;
-    border-radius: 10px;
-    text-decoration: none;
+    border-radius: 10px; 
     color: var(--color-light);
-    font-family: var(--font-body);
+    text-decoration: none;
+    font-family: var(--font-body); 
 }
+
 
 .main-content .btn-primary{
     display: flex;
-    align-items:center;
-    gap:5px;
+    align-items: center;
+    gap: 5px;
 }
+
 
 main{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;    
     background-color: var(--color-LottusNight);
     padding: 90px 0;
-
 }
+
 
 h1{
     color: var(--color-light);
@@ -64,28 +70,32 @@ h1{
     line-height: 64px;
 }
 
+
 .text-highlight{
     color: var(--color-primary);
 }
 
+
 .main-content p{
     color: var(--color-light);
-    font-size: var(--font-body);
+    font-size: var(--font-size-body);
     width: 476px;
     font-family: var(--font-body);
 }
 
+
 .main-content{
-    display:flex;
+    display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
+
 .main-content nav{
-    display:flex;
+    display: flex;
     gap: 10px;
-    
 }
+
 
 .section-statistics{
     display: flex;
@@ -96,57 +106,103 @@ h1{
     padding: 20px 0;
 }
 
-.section-statistics h2 {
+
+.section-statistics h2{
     font-weight: 400;
     color: var(--color-light);
     font-size: var(--font-size-h2);
-    font-family: var(--font-title);
+    font-family: var(--font-title);    
 }
 
-.section-statistics p {
+
+.section-statistics p{
     color: var(--color-light);
     font-family: var(--font-body);
     font-size: var(--font-size-body);
 }
 
-.section-statistics div {
+
+.section-statistics div{
     text-align: center;
 }
 
-.section-records  {
+
+.section-records{
     display: flex;
     flex-direction: column;
     gap: 40px;
-   align-items: center;
-   background-color: var(--color-LottusNight); 
-   padding: 90px 0;
-   font-size: var(--font-size-body);
-   font-family: var(--font-body);
+    align-items: center;
+    background-color: var(--color-LottusNight);
+    padding: 90px 0;
 }
 
-.section-records h2 {
+
+.section-records h2{
     color: var(--color-light);
     font-size: var(--font-size-h2);
-    font-family: var(--font-title); 
+    font-family: var(--font-title);
     font-weight: 400;
 }
+
 
 .records-container{
     display: flex;
     gap: 40px;
 }
 
+
 .records-card{
     display: flex;
     flex-direction: column;
     gap: 15px;
-    align-items: center;
-
+    text-align: center;    
 }
+
 
 .records-card h3{
     color: var(--color-light);
-    font-size: var(--font-size-body);
+    font-size: var(--font-size-h6);
     font-family: var(--font-title);
     font-weight: 400;
+}
+
+.section-highlights{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    background-color: var(--color-LottusDusk);
+}
+
+.highlights-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.highlights-content h2{
+    color: var(--color-light);
+    font-size: var(--font-size-h2);
+    font-weight: 400;
+    font-family: var(--font-title);
+}
+
+.highlights-content p{
+    color: var(--color-light);
+    font-family: var(--font-body);
+    font-size: var(--font-size-body);
+    width: 494px;
+}
+
+.highlights-content nav{
+    display: flex;
+    gap: 10px;
+
+}
+
+.highlights-content .btn-outline{
+    display: flex;
+    gap: 5px;
+    align-items: center;
 }
