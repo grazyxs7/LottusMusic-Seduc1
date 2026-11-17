@@ -1,4 +1,4 @@
-@import url(./global.css);
+@import url("./global.css");
 
 header{
     display: flex;
@@ -8,15 +8,17 @@ header{
     padding: 15px 0;
     border-bottom: 2px solid var(--color-primary);
 }
+
 ul{
     display: flex;
-    gap: 20px;
     list-style: none;
+    gap: 20px;
 }
 
 li a{
     color: var(--color-light);
     text-decoration: none;
+    font-family: var(--font-body);
 }
 
 .btn-primary{
@@ -25,30 +27,33 @@ li a{
     border-radius: 10px;
     color: var(--color-light);
     text-decoration: none;
+    font-family: var(--font-body);
+    
 }
 
 .btn-outline{
     border: 1px solid var(--color-light);
     padding: 10px 20px;
     border-radius: 10px;
-    color: var(--color-light);
     text-decoration: none;
+    color: var(--color-light);
     font-family: var(--font-body);
 }
 
 .main-content .btn-primary{
     display: flex;
-    align-items: center;
-    gap: 5px;
+    align-items:center;
+    gap:5px;
 }
 
 main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
     gap: 90px;
     background-color: var(--color-LottusNight);
     padding: 90px 0;
+
 }
 
 h1{
@@ -56,29 +61,30 @@ h1{
     font-size: var(--font-size-h1);
     font-family: var(--font-title);
     font-weight: 400;
-    line-height: 60px;
+    line-height: 64px;
 }
 
-.text-highlight {
+.text-highlight{
     color: var(--color-primary);
 }
 
-.main-content{
+.main-content p{
     color: var(--color-light);
-    font-size: var(--font-size-body);
+    font-size: var(--font-body);
     width: 476px;
     font-family: var(--font-body);
 }
 
 .main-content{
-    display: flex;
-    gap: 20px;
+    display:flex;
     flex-direction: column;
+    gap: 20px;
 }
 
 .main-content nav{
-    display: flex;
+    display:flex;
     gap: 10px;
+    
 }
 
 .section-statistics{
@@ -90,20 +96,57 @@ h1{
     padding: 20px 0;
 }
 
-.section-statistics h2{
+.section-statistics h2 {
     font-weight: 400;
     color: var(--color-light);
     font-size: var(--font-size-h2);
     font-family: var(--font-title);
 }
 
-.section-statistics p{
+.section-statistics p {
     color: var(--color-light);
     font-family: var(--font-body);
     font-size: var(--font-size-body);
 }
 
-.section-statistics div{
+.section-statistics div {
     text-align: center;
 }
 
+.section-records  {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+   align-items: center;
+   background-color: var(--color-LottusNight); 
+   padding: 90px 0;
+   font-size: var(--font-size-body);
+   font-family: var(--font-body);
+}
+
+.section-records h2 {
+    color: var(--color-light);
+    font-size: var(--font-size-h2);
+    font-family: var(--font-title); 
+    font-weight: 400;
+}
+
+.records-container{
+    display: flex;
+    gap: 40px;
+}
+
+.records-card{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+
+}
+
+.records-card h3{
+    color: var(--color-light);
+    font-size: var(--font-size-body);
+    font-family: var(--font-title);
+    font-weight: 400;
+}
